@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class testingRunner {
+public class ASCII {
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
         User John = new User("John","101");
@@ -12,5 +12,6 @@ public class testingRunner {
                            "╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗\r\n" + //
                            " ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝\r\n" + //
                            "                                                              ");
+        
     }
 }
