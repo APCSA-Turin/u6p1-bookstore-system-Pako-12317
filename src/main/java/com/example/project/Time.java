@@ -1,6 +1,6 @@
 package com.example.project;
 
-public class test {
+public class Time {
     public static void wait(int ms){
         try
         {
