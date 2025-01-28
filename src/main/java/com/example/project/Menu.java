@@ -45,7 +45,20 @@ public class Menu {
             } else if(in == 3) {
                 System.out.println();
             } else if(in == 4) {
-                System.out.println(store.getBooks());
+                String[] bookList = new String[store.getBooks().length];
+                for (int i = 0; i < store.getBooks().length; i++) {
+                    for (Book book : store.getBooks()) {
+                        if(book == null){
+                            bookList[i] = null;
+                        } else {
+                        bookList[i] = book.bookInfo();
+                        }
+                    }
+                }
+                System.out.println("\033[H\033[2J");
+                for (String string : bookList) {
+                    System.out.println(string);
+                }
                 Time.wait(5000);
             } else if(in == 5) {
                 System.out.println();
